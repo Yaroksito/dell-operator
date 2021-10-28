@@ -1,0 +1,5 @@
+namespace: dell-csi-operator
+
+resources:
+- operator.yaml
+- storage.dell.com.crds.all.yaml
