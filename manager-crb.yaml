@@ -10,4 +10,3 @@ subjects:
 - kind: ServiceAccount
   name: dell-csi-operator-manager-service-account
   namespace: dell-csi-operator
-

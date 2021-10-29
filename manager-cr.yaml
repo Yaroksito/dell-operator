@@ -183,6 +183,14 @@ rules:
 - apiGroups:
   - storage.dell.com
   resources:
+  - csipowermaxes
+  - csipowermaxes/finalizers
+  - csipowermaxes/status
+  verbs:
+  - '*'
+- apiGroups:
+  - storage.dell.com
+  resources:
   - csipowermaxrevproxies
   - csipowermaxrevproxies/finalizers
   - csipowermaxrevproxies/status
@@ -227,6 +235,27 @@ rules:
 - apiGroups:
   - storage.k8s.io
   resources:
+  - csinodes
+  verbs:
+  - create
+  - get
+  - list
+  - update
+  - watch
+- apiGroups:
+  - storage.k8s.io
+  resources:
+  - storageclasses
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - update
+  - watch
+- apiGroups:
+  - storage.k8s.io
+  resources:
   - volumeattachments
   verbs:
   - create
@@ -241,4 +270,3 @@ rules:
   - volumeattachments/status
   verbs:
   - patch
-
